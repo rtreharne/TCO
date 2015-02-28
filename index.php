@@ -5,7 +5,6 @@ $files = scandir($dir, 1);
 $n = sizeof($files)-2;
 $files = array_slice($files, 0, $n);
 ?>
-
 <!doctype html>
 <html lang="en">
 
@@ -25,11 +24,6 @@ $files = array_slice($files, 0, $n);
         <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,700,300' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/reveal.css">
     	<link rel="stylesheet" href="css/theme/black.css" id="theme">
-		<script src="http://d3js.org/d3.v3.min.js"></script>
-		<script src="js/main.js"></script>
-		<script type="text/javascript" src="js/plot.js"></script>
-		<link rel="stylesheet" href="css/plot.css"/>
-	 
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 
@@ -48,6 +42,13 @@ $files = array_slice($files, 0, $n);
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
+
+		<!-- Plotting scripts and styles -->
+		<script src="http://d3js.org/d3.v3.min.js"></script>
+		<script src="js/main.js"></script>
+		<script type="text/javascript" src="js/plot.js"></script>
+		<link rel="stylesheet" href="css/plot.css"/>
+
 	</head>
 
 	<body>
@@ -85,30 +86,25 @@ $files = array_slice($files, 0, $n);
 				    </ul>			
 			    </section>
 				
-				<section>
-					<section>
-						<h2>what's so special about a tc?</h2>
-						<p class="fragment">
-						   Are you kidding?
-						</p>
-						<p class="fragment">
-						<large>What's NOT special about a TC?</large>
-						</p>
-					</section>
-					<section>
-			<select id="tf_select" name="tf_select" onchange="plotNew('nk/'+this.value);">
-			  <option value="">Select...</option>
-			<?php
-			  $a = $files;
-			  foreach($a as $e) {
-				echo "<option value='".$e."'>".str_replace(".csv", "", $e)."</option>";
-			  }
-			?>
-		</select>
-		<div id="plot" class="svg-holder svg-holder-simple"></div>
-	 
-					</section>
-			    </section
+			    <section>
+					<h2>what's so special about a tc?</h2>
+					<p class="fragment">
+					   Are you kidding?
+					</p>
+			    </section>
+
+                <section>
+					<div id="plot" class="svg-holder svg-holder-simple"></div>
+                    <select id="tf_select" name="tf_select" onload="plotNew()" onchange="plotNew('nk/'+this.value);">
+				        <option value="">Select...</option>
+						 <?php
+							  $a = $files;
+							  foreach($a as $e) {
+								echo "<option value='".$e."'>".str_replace(".csv", "", $e)."</option>";
+							  }
+						?>
+                    </select>
+                </section>  
 			</div>
 			<footer><img src="http://cdt-pv.org/img/uol_white.png"></footer>
 		</div>
