@@ -46,6 +46,13 @@ body {
 /*********************************************
  * VIEW FRAGMENTS
  *********************************************/
+.reveal .slides div.split {
+    width: 50%;
+	display: inline-block;
+	float: left;
+	margin: 0;
+}
+
 .reveal .slides section .fragment {
   opacity: 0;
   visibility: hidden;
