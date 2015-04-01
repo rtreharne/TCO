@@ -264,6 +264,37 @@ $files = array_slice($files, 0, $n);
 						</ul>
 				    </section>
 
+					<section>
+					    <h4>Magnetron Sputtering</h4>
+					    <ul class="gallery3">
+						    <li>
+							<iframe width="420" height="315" src="https://www.youtube.com/embed/fSV_UyAFEKM" frameborder="0" allowfullscreen></iframe>
+							<p><a href="cdt-pv.org/podcasts">CDT-PV Podcast</a></p>
+							</li>
+						    <li>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/L6ZIkmIVm6c" frameborder="0" allowfullscreen></iframe>
+							<p>What is Sputtering?</p>
+							</li>
+						    <li>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/NSb4zFzQD_0" frameborder="0" allowfullscreen></iframe>
+							<p>Lab Scale (good overview)</p>
+							</li>
+						    <li>
+						    <iframe width="560" height="315" src="https://www.youtube.com/embed/fDdAbFP7TtE" frameborder="0" allowfullscreen></iframe>
+							<p>Jam Jar Sputtering!</p>
+							</li>
+						    <li>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/MRKtFwEPEiM" frameborder="0" allowfullscreen></iframe>
+							<p>Industry Scale</p>
+							</li>
+						    <li>
+							<iframe width="420" height="315" src="https://www.youtube.com/embed/cJgJIZ-hhs4" frameborder="0" allowfullscreen></iframe>
+							<p>In-line (nice graphics)</p>
+							</li>
+						</ul> </section>
+					
+
+
 				</section>
 
 				<section id="PV">
@@ -298,7 +329,7 @@ $files = array_slice($files, 0, $n);
 				</section>
 
 			</div>
-			<footer><img src="http://cdt-pv.org/img/uol_white.png"></footer>
+			<footer><img class="logo" src="http://cdt-pv.org/img/uol_white.png"></footer>
 		</div>
 
 		<script src="lib/js/head.min.js"></script>

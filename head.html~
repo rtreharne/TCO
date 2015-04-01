@@ -1,0 +1,41 @@
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="Transparent Conducting Oxides: Fundamentals and Applications">
+		<meta name="author" content="Robert Treharne, University of Liverpool"/>
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+		
+        <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,700,300' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/reveal.css">
+    	<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+        <script type="text/javascript"
+            src="js/MathJax.js">
+        </script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+		<!-- Plotting scripts and styles -->
+		<script src="js/d3.js"></script>
+		<script src="js/main.js"></script>
+		<script type="text/javascript" src="js/plot.js"></script>
+		<link rel="stylesheet" href="css/plot.css"/>
+
+
