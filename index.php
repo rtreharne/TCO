@@ -12,11 +12,15 @@ $files = array_slice($files, 0, $n);
 	</head>
 
 	<body onload="plotNew()">
+    <div id="header">
+			<a href="#"></a>
+			<div class="sharing">
+				<a class='fb' target='_blank' href='https://www.researchgate.net/profile/Robert_Treharne'> </a>
+				<a class='tw' href='https://twitter.com/share?url=http://pvlink.org/TCO&text=Transparent Conductors: Fundamentals and Applications. A presentation by @robtreharne #TCO #PV' target='_blank'> </a>
+			</div>
+		</div>
+	
 
-	    <div class="sharing">
-	        <a class='rg' href='http://www.researchgate.net/profile/Robert_Treharne'></a>
-	    	<a class='tw' href='https://twitter.com/share?url=http://pvlink.org/TCO&text=Transparent Conductors: Fundamentals and Applications - A presentation by @robtreharne @livuni' target='_blank'> </a>
-        </div> 
 
 		<div  class="reveal">
 
@@ -230,9 +234,9 @@ $files = array_slice($files, 0, $n);
 				    </section>
 
 					<section>
-                        <ul class="gallery2">
+                        <ul class="gallery2" style="margin-top: -30px;">
 						    <li>
-							    <a href=""><img src="img/sputtering.jpg"></a>
+							    <a href="#/6/2"><img src="img/sputtering.jpg"></a>
 								<p>Magnetron Sputtering</p>
 						    </li>
 						    <li>
@@ -292,7 +296,51 @@ $files = array_slice($files, 0, $n);
 							<p>In-line (nice graphics)</p>
 							</li>
 						</ul> </section>
-					
+
+					<section>
+					    <h4>Chemical Vapour Deposition (CVD)</h4>
+					    <ul class="gallery3">
+						    <li>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/k27ukETADD8" frameborder="0" allowfullscreen></iframe>
+							<p>Great Lecture</p>
+							</li>
+						    <li>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/OVokYKqWRZE" frameborder="0" allowfullscreen></iframe>
+							<p>Float Glass (see 5:00)</p>
+							</li>
+						    <li>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/OA4F0DdNO9k" frameborder="0" allowfullscreen></iframe>
+							<p>Tin Oxide</p>
+							</li>
+						</ul> </section>
+				    
+					<section>
+					    <h3>Sputtering vs CVD</h3>
+						</br>
+						<div class="split" style="color: #FF9346;">
+						    <h5>Sputtering</h5>
+							<ul>
+							    <li>Low temp</li>
+								<li>Requires Vacuum</li>
+								<li>Technology of choice for flat panel displays</li>
+								<li>Predominantly used for ITO and AZO</li>
+								<li>Relatively slow/expensive</li>
+								<li><a href="http://onlinelibrary.wiley.com/doi/10.1002/ente.201402174/abstract?deniedAccessCustomisedMessage=&userIsAuthenticated=false">Roll to roll for large scale OPV</a></li>
+						    </ul>
+						</div>
+						<div class="split" style="color: #80bc63;">
+						    <h5>CVD</h5>
+						    <ul>
+							    <li>High Temperature</li>
+								<li>Vacuum or atmospheric pressure (APCVD)</li>
+								<li>Technology of choice for float glass industry</li>
+								<li>Predominantly SnO<sub>2</sub>:F (<a href="https://www.pilkington.com/products/bp/bybenefit/solarenergy/tec/default.htm">TEC glass!</a>)</li>
+								<li>Highly cost effective on large scale</li>
+								<li><a href="http://www.graphenea.com/blogs/graphene-news/8017795-graphene-mass-production-roll-to-roll">Roll to roll graphene</a></li>
+
+						    </ul>
+						</div>
+					</section>
 
 
 				</section>
@@ -329,7 +377,7 @@ $files = array_slice($files, 0, $n);
 				</section>
 
 			</div>
-			<footer><img class="logo" src="http://cdt-pv.org/img/uol_white.png"></footer>
+			<footer><a href="http://cdt-pv.org"><img class="logo" src="img/cdtpv_logo.png"></a><a href="http://liv.ac.uk"><img class="logo" src="img/uol_logo.png"></a><a href = "https://www.liv.ac.uk/renewable-energy/"><img class="logo" src="img/si_logo.png"></a></footer>
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
