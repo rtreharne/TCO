@@ -342,7 +342,8 @@ body {
 .reveal .slides > section.present, .reveal .slides > section > section.present {
   display: block;
   z-index: 11;
-  opacity: 1; }
+  opacity: 1; 
+  padding: 0px;}
 
 .reveal.center, .reveal.center .slides, .reveal.center .slides section {
   min-height: 0 !important; }
@@ -1185,9 +1186,9 @@ div#header a{
 
 div#header div.sharing{
 	float:right;
-	width: 156px;
+	width: 90px;
 	margin-top: -4px;
-	margin-right: 92px;
+	margin-right: 20px;
         position:relative;
         z-index: 999;
 }
@@ -1214,4 +1215,8 @@ div#header div.sharing a.tw{
 
 div#header div.sharing a.tw:hover{
 	background: url(../img/twitter.png) 0 -40px no-repeat;
+}
+
+ul.parameters {
+    font-size: 0.7em;
 }
